@@ -7,6 +7,7 @@ let navbarStatus = false;
 
 navOpenBtn.addEventListener('click', () => {
   navbarStatus = !navbarStatus
+  setTimeout(function() {navOpenBtn.classList.add('hidden')}, 100)
   if (navbarStatus) {
     navbar.classList.replace('-left-full', 'left-0')
 
@@ -18,6 +19,7 @@ navOpenBtn.addEventListener('click', () => {
 
 navCloseBtn.addEventListener('click', () => {
   navbarStatus = !navbarStatus
+  navOpenBtn.classList.remove('hidden')
   if (!navbarStatus) {
     navbar.classList.replace('left-0', '-left-full')
   }
