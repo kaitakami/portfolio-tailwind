@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kai Takami</title>
+  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-body text-white font-poppins pb-12">
+
+  <header class="py-6">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-9 lg:px-24 w-full">
+      <div class="text-2xl">Kai Takami</div>
+      <!-- RESPONSIVE NAVBAR -->
+      <div id="navbar"
+        class="pb-24 text-lg fixed flex flex-col -left-full top-0 place-content-center space-y-10 w-screen h-screen bg-emerald-400 md:pb-0 md:relative md:space-y-0 md:space-x-8 lg:space-x-12 md:flex-row items-center md:left-auto md:text-lg transition-all ease-in-out md:bg-transparent md:w-auto md:h-auto">
+        <!-- CLOSE BUTTON -->
+        <svg id="nav-close-button" xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 absolute text-lg right-7 top-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        <a href="#" class="text-selected-text hover:text-theme transition-all ease-in-out navbar-element">Home</a>
+        <a href="#work" class="hover:text-theme transition-all ease-in-out navbar-element">Portfolio</a>
+        <a href="#experience" class="hover:text-theme transition-all ease-in-out navbar-element">Experience</a>
+        <a href="#contact" class="navbar-element"><button
+            class="px-6 py-2 bg-theme font-bold hover:bg-white hover:text-theme transition-all ease-in-out">Contact</button></a>
+      </div>
+      <!-- OPEN BUTTON -->
+      <div class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:rotate-180 transition ease-in-out"
+          id="nav-open-button" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="flex flex-wrap md:flex-nowrap">
+      <nav class="md:inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden">
+        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+          </a>
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+          </a>
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Experience</span>
+          </a>
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+        <div>
+          <h1 class="font-bold text-4xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br> beautiful web
+            experiences.</h1>
+          <div class="w-full flex justify-center md:justify-start">
+            <button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span>My Work.</span>
+            </button>
+          </div>
+        </div>
+        <img src="./assets/cat.png" alt="Man"
+        class=" mt-10 w-3/4 md:w-2/5 md:absolute md:mt-0 md:mb-0 right-28 -z-10">
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

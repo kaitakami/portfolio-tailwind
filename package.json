@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaitakami/portfolio-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaitakami/portfolio-tailwind/issues"
+  },
+  "homepage": "https://github.com/kaitakami/portfolio-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.5"
+  }
+}
